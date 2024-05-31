@@ -56,14 +56,31 @@ public:
 
            }
            // jika FRONT_poostition <= REAR_postition, iterai dari FRONT hingga REAR
+           if (FRONT_postition <= REAR_postition) {
+            while (FRONT_postition <= REAR_postition) {
+                cout << queue_array[FRONT_postition] << " ";
+				FRONT_postition++;
+               }
+               cout << endl;
+           }
+           else {
+            //jika FRONT_postition >REAR_postition, iterasi dari FRONT hingga akhri array
+            while (FRONT_postition <= max - 1) {
+                cout << queue_array[FRONT_postition] << " ";
+				FRONT_postition++;
+               }
+               FRONT_postition = 0;
+
+               //literasi dari awal array hingga REAR
+               while (FRONT_postition <= REAR_postition){
+                cout << queue_array[FRONT_postition] << " ";
+				FRONT_postition++;
+               }
+               cout << endl;
+           }
         }
     }
-
-   
-        
-
-        
-
-
+};
+int main () {
+    
 }
-
