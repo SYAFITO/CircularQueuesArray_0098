@@ -47,14 +47,15 @@ public:
             }
         }
         void display() {
-            int FRONT_postition = FRONT;
+        int FRONT_postition = FRONT;
 		int REAR_postition = FRONT;
-
-		//cek apakah antrian kosong
+        
+        //cek apakah antrian kosong        
         if (FRONT == -1) {
             cout << "Queue is empty\n";
-            
-        }
+
+           }
+           // jika FRONT_poostition <= REAR_postition, iterai dari FRONT hingga REAR
         }
     }
 
